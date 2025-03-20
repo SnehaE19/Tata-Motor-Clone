@@ -1,0 +1,179 @@
+:root{
+    --primary-color: aliceblue;
+}
+@font-face {
+    font-family: "Mars Bold";
+    src: url("Mars\ Bold.otf");
+}
+@font-face {
+    font-family: "Reospec";
+    src: url("Reospec.otf");
+}
+*{
+    margin: 0;
+    font-family: "Reospec",tahoma;
+}
+body{
+    background: url(images.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    h1{
+        font-family: "Mars Bold",sans-serif;
+        /* font-family: "Reospec",sans-serif; */
+        font-size: 2.2rem;
+        letter-spacing: -12px;
+        color: white;
+        font-weight: 100;
+    }
+}
+.main-head{
+    color: cyan;
+    font-family: "Mars Bold",sans-serif;
+    letter-spacing: -15px;
+}
+nav ul{
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    gap: 30px;
+    font-family: "Reospec";
+    li{
+        list-style-type: none;
+    }
+
+}
+nav a{
+    text-decoration: none;
+    color: cyan;
+    font-size: 1.4rem;
+
+
+    
+}
+nav a:hover{
+    color: var(--primary-color);
+    transition: all 0.1s ease-in-out;
+
+}
+
+
+.main-wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-wrapper .home{
+    height: 80vh;
+    width: 90%;
+    border: 2px cyan solid;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px 5px cyan;
+    display: flex;
+}
+.home .left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .banner{
+        height: 350px;
+        width: 320px;
+        background-color: cyan;
+        box-shadow: 0px 0px 20px 5px cyan;
+        border-radius: 40% 50% 30% 50%/40% 50% 50% 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        img{
+            height: 120%;
+            z-index: 10;
+        }
+    }
+}
+    .banner-ring{
+        height: 330px;
+        width: 300px;
+        border-radius: 2px;
+        border: 4px aliceblue solid;
+        border-radius: 40% 50% 30% 50%/40% 50% 50% 30%;
+        transform: rotate(7deg);
+        position: absolute;
+    }
+.home .right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 2rem;
+        position: relative;
+        left: 20px;
+    }
+}
+.main-wrapper .about{
+    height: 80vh;
+    width: 90%;
+    border: 2px cyan solid;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px 5px cyan;
+    display: flex;
+}
+
+.left-1 img {
+    margin-top: 70px;
+    margin-left:40px ;
+    border: 4px aliceblue solid;
+    border-radius: 10px;
+    height: 60%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .text {
+    margin-top: 50px;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    font-size: 1.5rem;
+    h2{
+        font-size: 2.5rem;
+    }
+    
+}
+
+.about-text p {
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+
+}

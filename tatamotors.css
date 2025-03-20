@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+/* Navigation Bar */
+header{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(180deg, black,black,transparent);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+header ul{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 15px; */
+}
+header ul li{
+    list-style-type: none;
+    font-weight: 500;
+    color: white ;
+}
+header ul li a{
+    text-decoration: none;
+}
+header img{
+    height: 100%;
+
+}
+header .logo-left{
+    height: 200px;
+    width: 200px;
+}
+/* Home */
+.text{
+    width: 550px;
+    position: absolute;
+    top: 400px;
+    z-index: 100;
+    color: aliceblue;
+    left: 150px;
+    opacity: 0;
+    animation: drag 2s ease-in-out forwards;
+    span{
+        font-size: 70px;
+    }
+    a{
+        /* margin-bottom: 30px; */
+        color: aliceblue;
+        font-size: 1.6rem;
+    }
+}
+@keyframes drag{
+    to{
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+
+}
+/* .students{ */
+    /* position:absolute;
+    /* border-radius: 5%; */
+    /* height: 300px;
+    width: 300px;
+    display: flex;
+    border-radius: 25%; */ 
+/* } */
+
+.second{
+
+    display: flex; 
+    width: 100%;
+    /* max-width: 100%; */
+    height: 420px;
+    border-radius: 25%; 
+    position:absolute;
+    gap: 30px;
+    background-color: black;
+    
+    /* flex-wrap: wrap; */
+    /* display: flex; */
+}
+.second img:hover{
+    /* height: 600px; */
+    height: 500px;
+}
+
+/* third  */
+.third{
+    overflow-x: hidden;
+    img{
+        height: 70vh;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+}
+.about-us {
+    padding: 50px 20px;
+    background-color: #242427;
+    color: #ffffff;
+    overflow-x: hidden;
+    h2,h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+    }
+}
+
+.para {
+   width: 800px;
+   margin-left: 350px;
+   font-size: 1.3rem;
+}
+
+.read-more {
+    color: white;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    gap: 60%;
+    h3,p{
+        font-size: 1.3rem;
+    }
+
+
+}
+
+.vehicles {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 100px;
+    position: relative;
+}
+
+.vehicles img {
+    height: 500px;
+    max-width: 100%;
+}
+
+.car-center {
+    transform: scale(1);
+    animation: front 1s ease-out;
+}
+
+
+/* 4th */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f8fd;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+} */
+
+
+.text-content {
+    width: 40%;
+}
+
+h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+.highlight {
+    font-size: 36px;
+    color: #3273e0;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin: 15px 0;
+}
+
+.link {
+    font-size: 16px;
+    color: #1d2088;
+    text-decoration: none;
+    border-bottom: 2px solid #1d2088;
+    display: inline-block;
+    margin-top: 10px;
+}
+.image-content {
+    position: relative;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: carmove 3s linear forwards;
+}
+
+/* .background {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+} */
+
+.carwhite {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    
+}
+@keyframes carmove{
+    0% {right:0%}
+    100%{right: 50px;}
+}
+.Sustainability {
+    display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      background: #242427;
+    }
+    
+    .img-item {
+      position: relative;
+      width: 100%;
+    }
+    
+    .img-item img {
+      width: 100%;
+      height: 100%;
+      border-radius: 40px;
+     
+    }
+    
+    .text-item {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      width: 80%;
+      padding: 20px;
+      border-radius: 10px;
+      p{
+        font-size: 20px;
+      }
+    }
+    
+    .text-item a {
+      padding: 10px;
+      background: skyblue;
+      color: white;
+      border-radius: 40px;
+    }
+    footer{
+        padding: 50px;
+        background-color: #242427; 
+        h3{
+            color: blue;
+        }
+    }
+    
+    .footer-outer{
+        color: aliceblue;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+    }
+    .list ul{
+        padding: 0;
+    }
+    
+    ul li{
+        list-style-type: none;
+    }    
+
+.footer {
+    background-color: #0b0f5d; /* Dark Blue Background */
+    color: white;
+    padding: 50px 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 16%; /
+}
+
+.footer-column h3 {
+    color: #448aff; 
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #448aff;
+    padding-bottom: 5px;
+}
+
+.footer-column h4 {
+    font-size: 14px;
+    color: #448aff;
+    margin-top: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #448aff; 
+}
